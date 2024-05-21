@@ -13,6 +13,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+void show_array(int r, int c, float* arr[]){
+	int i;
+	int j;
+
+	for(i = 0; i <r ; i++)
+		for (j = 0; j < c; j++)
+			printf("%f\n", arr[i][j]);
+			printf("\n");
+}
+
+
 int main(){
 
 	int i;
@@ -38,7 +50,8 @@ int main(){
 		if(measurments[i] == NULL)
 			exit(1);
 	}
-
+	
+	show_array(M, n, measurments);
 
 	for(i = 0; i < M; i++)
 		for(j = 0; j < n; j++)
