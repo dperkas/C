@@ -28,7 +28,7 @@ void bubble_sort(listnode_t *head) {		/* Added bubble sort algorithm to sort ele
     listnode_t *ptr;
     listnode_t *last = NULL;
 
-    // Check if list is empty or has only one element
+    						/* Check if list is empty or has only one element */
     if (head == NULL || head->next == NULL) {
         return;
     }
@@ -98,9 +98,9 @@ int main(){
 
 		scanf("%d", &node->value);				/* Read and store the number in the node.  */
 
-		/* Insert the node at the beggining of the list  */
 
-		node->next = head;
+									/* Insert the node at the beggining of the list  */
+		node->next = head;				
 		head = node;
 	}
 
