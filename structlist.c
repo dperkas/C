@@ -4,15 +4,15 @@
 
 struct listnode{
 	int value;
-	struct listnode *next;		/* Pointer to the next node in the list  */
+	struct listnode *next;			/* Pointer to the next node in the list  */
 };
 
-typedef struct listnode listnode_t;	/* Creating an alias listnode_t of type struct listnode so that I can use
-					   this instead of struct listnode every time */
+typedef struct listnode listnode_t;		/* Creating an alias listnode_t of type struct listnode so that I can use
+					   	this instead of struct listnode every time */
 
 
-void find_sum(listnode_t *node){	/* Calculate the sum of all nodes in the list. Without typedef it would be 
-					   void find_sum(struct listnode *node) */
+void find_sum(listnode_t *node){		/* Calculate the sum of all nodes in the list. Without typedef it would be 
+					   	void find_sum(struct listnode *node) */
 
 	int sum = 0;
 
@@ -22,6 +22,46 @@ void find_sum(listnode_t *node){	/* Calculate the sum of all nodes in the list. 
 	}
 	printf("Sum of numbers: %d\n ", sum);
 }
+
+void bubble_sort(listnode_t *head) {		/* Added bubble sort algorithm to sort elements  */
+    int swapped;
+    listnode_t *ptr;
+    listnode_t *last = NULL;
+
+    // Check if list is empty or has only one element
+    if (head == NULL || head->next == NULL) {
+        return;
+    }
+
+    do {
+        swapped = 0;
+        ptr = head;
+
+        while (ptr->next != last) {
+            if (ptr->value > ptr->next->value) {
+                // Swap values
+                int temp = ptr->value;
+                ptr->value = ptr->next->value;
+                ptr->next->value = temp;
+                swapped = 1;
+            }
+            ptr = ptr->next;
+        }
+        last = ptr;
+    } while (swapped);
+}
+
+void print_list(listnode_t *head) {		/* Added function to print sored list  */
+    listnode_t *current = head;
+
+    printf("Sorted list: ");
+    while (current != NULL) {
+        printf("%d ", current->value);
+        current = current->next;
+    }
+    printf("\n");
+}
+
 
 void free_list(listnode_t *node){	/* free allocated memory from every node  */
 	
@@ -66,7 +106,10 @@ int main(){
 
 
 	find_sum(head);
+	bubble_sort(head);
+	print_list(head);
 	free_list(head);
+
 
 	return 0;
 
