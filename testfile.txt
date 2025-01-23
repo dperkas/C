@@ -1,0 +1,4 @@
+This is a random text file used for the C program filemax-somtheing.
+Just using it to find the longest word in this exact file.
+
+Let's just see if it works.
