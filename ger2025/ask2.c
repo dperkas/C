@@ -3,7 +3,7 @@
 int main(){
 	char in;
 	
-	printf("Give a character: \n");
+	printf("Type a character: ");
 	scanf(" %c",&in);
 	
 	if(in >= 'A' && in <= 'Z'){
