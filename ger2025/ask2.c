@@ -12,13 +12,20 @@ int main(){
 		printf("Lowercase: %c\n",lower);
 	}
 	
-	
+	else if(in >= 'a' && in <='z'){
+		printf("The ASCII code of the character is: %d\n",in);
+		}
 
+	else if(in >='0' && in <='9'){
+		printf("Typed int: %c\n",in);
+	}
 
+	else
+	{
+		printf("%c\n",in);
 
-
-
+	}
 
 
 	return 0;
-}
+}	
