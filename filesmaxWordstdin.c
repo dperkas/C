@@ -1,6 +1,6 @@
 /*
  *
- *Finds the longes word from stdin, while typing.
+ *Finds the longest word from stdin, while typing.
  *Use Ctrl+D (^D) to terminate (EOF)
  *
  */
