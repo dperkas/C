@@ -8,7 +8,8 @@ int main(){
 	
 	if(in >= 'A' && in <= 'Z'){
 		char lower;
-		lower = in + 32;	//ASCII A:65, ASCII a:97, 97-65=32, ara kefalaio + 32 = mikro
+		//lower = in + 32, an kserame ton ascii A kai ascii a, giati 97-65 = 32
+		lower = in + ('a'-'A');		//pio genikh periptwsh, an den kserame ton ascii
 		printf("Lowercase: %c\n",lower);
 	}
 	
