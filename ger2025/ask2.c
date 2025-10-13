@@ -17,7 +17,9 @@ int main(){
 		}
 
 	else if(in >='0' && in <='9'){
-		printf("Typed int: %c\n",in);
+		int trueint;
+		trueint = in - 48;
+		printf("Typed int: %d\n",trueint);
 	}
 
 	else
