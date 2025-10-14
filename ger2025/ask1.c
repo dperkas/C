@@ -7,7 +7,7 @@ int main(){
 	printf("Dwse treis akeraious arithmous:\n");
 	scanf("%d%d%d", &a,&b,&c);
 
-	mo = (a+b+c)/3;
+	mo = (a+b+c)/3.0;
 
 	printf("O mesos oros einai: %f\n ", mo);
 	
