@@ -34,8 +34,8 @@ int main(){
 			BE = 0*(0.5) + PR1*(0.4) + PR2*(0.4);
 		}	
 	}
-	else if(neos=0){	//palios
-		BE = 0.5*PR1 + 0.5*PR2;
+	else if(neos==0){	//palios
+		BE = 0.5*(PR1) + 0.5*(PR2);
 	}
 	printf("Lab grade: %f\n", BE);
 
