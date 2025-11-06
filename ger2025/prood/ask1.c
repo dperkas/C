@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int argc, char** argv){
 	int counter=0;
 	int i,j;
 	char first;
 	char last;
+
+	if(argc<2){
+		printf("Vale orismata!\n");
+		exit(1);
+	}
 
 	for(i = 1; i <argc;i++){
 		for(j = 0; j < strlen(argv[i]);j++){
