@@ -7,6 +7,7 @@ int main(int argc, char **argv){
 	int counter=0;
 	char *last;
 
+
 	for(i = 0; i<argc; i++){
 		counter++;
 	}
