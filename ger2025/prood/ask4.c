@@ -14,7 +14,7 @@ int main(int argc, char **argv){
 
 
 	for(i = 1;i<argc;i++){
-		if(strlen(argv[i]) > strlen(newlong)){	// 
+		if(strlen(argv[i]) >= strlen(newlong)){	// 
 			newlong=argv[i];		// kanw anathesh, =, oxi ==
 		}
 	}

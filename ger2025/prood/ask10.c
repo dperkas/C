@@ -14,9 +14,9 @@ int main(int argc, char **argv){
 	else{
 		for(i=1; i<argc;i++){
 			//for(j=0; j<strlen(argv[i]);j++){
-				//if(argv[i]>='0' && argv[i]<='9'){
+				//if(argv[i]>='0' && argv[i]<='9'){	//xreiazetai kai auth h for 
 				if(isdigit(argv[i])){
-					sum += atoi(argv[i]);
+					sum += atoi(argv[i]);	// etsi einai: sum += argv[i][j] - '0'
 				}
 				//}
 			//}
