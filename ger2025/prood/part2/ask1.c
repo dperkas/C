@@ -6,6 +6,7 @@ int main(int argc, char **argv){
 	int i,j;
 	int lenght = 100;
 	char *target = "MYY502";
+	int count;
 
 	for(i=1; i<argc;i++){
 		if(strlen(argv[i]) <  lenght){
@@ -19,8 +20,8 @@ int main(int argc, char **argv){
 	}
 
 	for(i=1; i<argc;i++){
-		if(strstr(argv[i],target) != NULL){
-			printf("%s\n",argv[i]);
+		if(strcmp(argv[i],target) == 0){
+			count++;
 		}
 	}
 

@@ -12,6 +12,7 @@ int main(int argc, char **argv){
 			if(isdigit(argv[i][j])){
 				printf("%s\n",argv[i]);
 				flag = 1;
+				break;
 			}
 		}
 	}

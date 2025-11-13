@@ -9,7 +9,7 @@ int main(int argc, char **argv){
 
 	if(argc<2){
 		printf("Vale orismata!");
-		exit(1);
+		return 1;
 	}
 
 	len = atoi(argv[1]);
