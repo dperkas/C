@@ -19,7 +19,7 @@ int main(int argc, char **argv){
 	}
 
 	for(i=1; i<argc;i++){
-		if(strstr(argv[i],target) != 0){
+		if(strstr(argv[i],target) != NULL){
 			printf("%s\n",argv[i]);
 		}
 	}
