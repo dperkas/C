@@ -4,18 +4,25 @@
 
 int main(int argc, char **argv){
 	int i,j;
-	char *shortest = NULL;
-	int max = 100;
+	int lenght = 100;
+	char *target = "MYY502";
 
 	for(i=1; i<argc;i++){
-		if(strlen(argv[i]) <=  max){
-			max=strlen(argv[i]);
-			shortest=argv[i];
+		if(strlen(argv[i]) <  lenght){
+			lenght=strlen(argv[i]);
 		}
 	}
-	printf("%s\n",shortest);
+	for(i=1;i<argc;i++){
+		if(strlen(argv[i])==lenght){
+			printf("%s\n",argv[i]);
+		}
+	}
 
-
+	for(i=1; i<argc;i++){
+		if(strstr(argv[i],target) != 0){
+			printf("%s\n",argv[i]);
+		}
+	}
 
 
 
