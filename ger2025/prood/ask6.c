@@ -15,12 +15,12 @@ int main(int argc, char **argv){
 		}
 	}
 
-	//last = argv[argc-1];
-
+	last = argv[argc-1];
 	
-	for(i=argc-1; i<argc;i++){
-		for(j=0,j<strlen(argv[i]);j++){
-			
+	for(i=1; i<strlen(last);i+=2){
+		printf("%c ",last[i]);
+	}
+	printf("\n");
 
 
 
