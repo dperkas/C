@@ -19,14 +19,12 @@ int main(int argc, char **argv){
 	}
 	printf("%d\n",counter);
 
-	for(i=1; i<argc;i++){
-		for(j=0;j<strlen(argv[i]);j++){
-			if(argv[i][0]=='M' && argv[i][1]=='Y'){
-				printf("%c",argv[i][j]);
-			}
+	for(i=1; i<argc; i++){
+		if(argv[i][0] == 'M' && argv[i][1]== 'Y'){
+			printf("%s\n",argv[i]);
 		}
 	}
-	printf("\n");
+
 
 
 
