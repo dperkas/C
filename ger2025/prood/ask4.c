@@ -28,13 +28,6 @@ int main(int argc, char **argv){
 	}
 	printf("\n");
 
-	/*
-	for(i=argc-1;i<argc;i++){
-		for(j=strlen(argv[i]);j>=0;j--){
-			printf("%c\n",argv[i][j]);
-		}
-	}
-	*/
 
 
 
