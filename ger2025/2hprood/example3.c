@@ -3,17 +3,31 @@
 
 int main(){
 	FILE *infile;
-	char buf[101], maxWord[101];
+	char buf[101];
 	int maxLenght = 0;
+	char *maxWord;
 
-	if((infile=fopen("example2.txt", "r")) == NULL){	// panta ginetai o elegxos 
+	infile = fopen("example2.txt","r");
+
+	if(infile == NULL){	// panta ginetai o elegxos 
+		printf("File example2.txt not found\n");
 		return 1;
 	}
 	
 
 	// megaluterh se mhkos sumvoloseira
 	// an uparxoun panw apo mia, kratame thn prwth emfanish
-	strcpy(maxWord, "");
 	while(fscanf(infile, "%s", buf) != EOF){
 		if(strlen(buf)> maxLenght){
+			maxWord = buf;
+			maxLenght = strlen(buf);
+		}
+	}
+	
+	
+	printf("max word is: %s\n",maxWord);
 
+	fclose(infile);
+
+	return 0;
+}
