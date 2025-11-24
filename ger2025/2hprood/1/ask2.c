@@ -7,7 +7,9 @@ int main(){
 	FILE *negfile;
 	char buf[50];
 	int *array;
-	int n;
+	int n=0;
+	int i;
+	int number;
 
 	infile = fopen("data.txt","r");
 	if(infile == NULL){
@@ -31,9 +33,15 @@ int main(){
 	array = (int*)malloc(n*sizeof(int));
 	printf("numbers in file: %d\n",n);
 
-	//while(fgets(buf,50,infile) != NULL){
-
-	//}
+	for(i=0;i<n;i++){
+		number = atoi(array[i]);
+		if(number>0){
+			fputs(number,posfile);
+		}
+		else if(number<0){
+			fputs(number,negfile);
+		}
+	}
 
 
 
