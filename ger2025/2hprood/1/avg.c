@@ -26,6 +26,12 @@ int main(int argc, char **argv){
 		}
 	}
 
+	//======================//
+	
+
+	//while(fgets(buf,100,infile) != NULL){
+
+
 
 
 
