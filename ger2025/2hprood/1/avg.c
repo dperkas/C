@@ -26,8 +26,6 @@ int main(int argc, char **argv){
 		}
 	}
 
-	//while(fgets(buf2,10,infile) !=NULL){
-	//	while(
 
 
 
